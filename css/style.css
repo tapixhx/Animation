@@ -1,0 +1,46 @@
+*{
+	margin:0;
+	padding:0;
+}
+.bkimg{
+	height:100vh;
+	width:100%;
+	background-image:url('../Images/sky.jpg');
+	background-size:cover;
+	position:relative;
+}
+.road{
+	height:200px;
+	width:100%;
+	position:absolute;
+	background-image:url('../Images/road.jpg');
+	bottom:0;
+}
+.city{
+	height:250px;
+	width:100%;
+	background-image:url('../Images/city.png');
+	position:absolute;
+	bottom:200px;
+}
+.car{
+	width:400px;
+	/*position:absolute;*/
+	margin-left:35%;
+	margin-top:10%;
+	/*bottom:-60px;*/
+}
+.car img{
+	width:100%;
+}
+.wheel{
+	margin-left:37%;
+}
+.wheel img{
+	height:72px;
+	width:72px;
+	/*position:absolute;*/
+}
+.frwheel{
+	margin-left:20%;
+}
