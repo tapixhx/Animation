@@ -4,44 +4,19 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-	<script language="Javascript">
-var val=0;
-var x=0;
-var y=0;
-var road;
-var city;
-function rott()
-{
-val=val+1;
-document.getElementById('bkwheel').style.transform="rotate("+val+"deg)";
-document.getElementById('frwheel').style.transform="rotate("+val+"deg)";
-if(val>359){ //when value goes 360 again start from 1
-	val=1;
-}
-road=document.querySelector(".road");
-road.style.backgroundPosition=x+'px';
-x=x-1;
-city=document.querySelector(".city");
-city.style.backgroundPosition=y+'px';
-y=y-1;
-if(x<-10000||y<-10000){
-	x=1;
-	y=1;
-}
-}
-</script>
 	<div class="bkimg">
 		<div class="road">
 			<div class="city">
 				<div class="car">
 					<img src="../Images/car.png">
 					<div class="wheel">
-						<img src="../images/wheel.png" id="bkwheel" onclick="setInterval('rott()',2)">
-						<img src="../images/wheel.png" id="frwheel" onclick="setInterval('rott()',2)">
+						<img src="../images/wheel.png" id="bkwheel" onclick="setInterval('rott()',10)"><!-- when timer element is small animation looks continous -->
+						<img src="../images/wheel.png" id="frwheel" onclick="setInterval('rott()',10)">
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="../javascript/motion.js"></script>
 </body>
 </html>
