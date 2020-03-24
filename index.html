@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+	<title>Animation</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<div class="bkimg">
+		<div class="road">
+			<div class="city">
+				<div class="car">
+					<img src="./Images/car.png">
+					<div class="wheel">
+						<img src="./images/wheel.png" id="bkwheel" onclick="setInterval('rott()',10)"><!-- when timer element is small animation looks continous -->
+						<img src="./images/wheel.png" id="frwheel" onclick="setInterval('rott()',10)">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./javascript/motion.js"></script>
+</body>
+</html>
